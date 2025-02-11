@@ -1,11 +1,18 @@
 {
     "name": "hexlet/code",
     "bin": ["bin/brain-games"],
+"autoload": {
+        "files": [
+            "src/Cli.php"
+        ]
+    },
     "authors": [
         {
             "name": "MrMarmelad-creator",
             "email": "aydetore02@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    }
 }
