@@ -1,0 +1,20 @@
+{
+  "name": "php-project-45",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/MrMarmelad-creator/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MrMarmelad-creator/php-project-45/actions) <a href=\"https://codeclimate.com/github/MrMarmelad-creator/php-project-45/maintainability\"><img src=\"https://api.codeclimate.com/v1/badges/8e9df1a964878dd96871/maintainability\" /></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMarmelad-creator/php-project-45.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrMarmelad-creator/php-project-45/issues"
+  },
+  "homepage": "https://github.com/MrMarmelad-creator/php-project-45#readme"
+}
