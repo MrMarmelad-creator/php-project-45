@@ -1,6 +1,10 @@
 {
     "name": "hexlet/code",
-    "bin": ["bin/brain-games"],
+    "version": "1.0.0",
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
 "autoload": {
         "files": [
             "src/Cli.php"
