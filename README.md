@@ -6,10 +6,14 @@
 
 https://asciinema.org/a/TJ1WOkQOhKPBvNLShfLByTHUJ
 
-#Brain-calc
+#Brain-calc:
 
 https://asciinema.org/a/ltoYASPx0eaBiLBYiCFPpi5Du
 
-#Brain-gcd
+#Brain-gcd:
 
 https://asciinema.org/a/TJZCsd8AonmsriUQaJBgSqdO0
+
+#Brain-progression:
+
+https://asciinema.org/a/SoSxI5SZWoix5cIEm4cBtnDWp
