@@ -34,7 +34,7 @@ function games()
         }
     }
     if ($correctAnswersCount === 3) {
-        echo "Congratulations, $name\n";
+        echo "Congratulations, $name!\n";
     }
 }
 games();
