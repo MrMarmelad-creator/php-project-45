@@ -18,7 +18,7 @@ function games(string $gameRule, callable $generateRound)
         [$question, $correctAnswer] = $generateRound();
         echo "Question: $question\n";
         echo "Your answer: ";
-        $userInput = trim(fgets(STDIN) ?: '');
+        $userInput = trim(fgets(STDIN) ?? '');
 
         if ((string) $correctAnswer === $userInput) {
             echo "Correct!\n";
