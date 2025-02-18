@@ -24,7 +24,7 @@ function games($gameRule, $generateRound)
             echo "Correct!\n";
             $correctAnswersCount++;
         } else {
-            echo "'$userInput' is wrong answer ;(. Correct answer was '$correctAnswer'.\n Let's try again, $name!\n";
+            echo "\"$userInput\" is wrong answer ;(. Correct answer was \"$correctAnswer\".\nLet's try again, $name!\n";
             return;
         }
     }
