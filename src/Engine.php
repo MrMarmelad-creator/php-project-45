@@ -5,7 +5,7 @@ namespace Php\Project45\Engine;
 use function cli\prompt;
 use function cli\line;
 
-function games($gameRule, $generateRound)
+function games(string $gameRule, callable $generateRound)
 {
     $correctAnswersCount = 0;
 
@@ -18,7 +18,7 @@ function games($gameRule, $generateRound)
         [$question, $correctAnswer] = $generateRound();
         echo "Question: $question\n";
         echo "Your answer: ";
-        $userInput = trim(fgets(STDIN));
+        $userInput = trim(fgets(STDIN) ?: '');
 
         if ((string) $correctAnswer === $userInput) {
             echo "Correct!\n";
@@ -28,7 +28,5 @@ function games($gameRule, $generateRound)
             return;
         }
     }
-    if ($correctAnswersCount === 3) {
-        echo "Congratulations, $name!\n";
-    }
+    line("Congratulations, %s!", $name);
 }
