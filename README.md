@@ -32,7 +32,7 @@ Make
 
 Клонируйте репозиторий:
 
-git clone https://github.com/your-username/php-brain-games.git
+git clone https://github.com/MrMarmelad-creator/php-project-45.git
 cd php-brain-games
 
 **Установите зависимости:**
