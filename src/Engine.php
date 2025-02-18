@@ -29,6 +29,6 @@ function games($gameRule, $generateRound)
         }
     }
     if ($correctAnswersCount === 3) {
-        echo "Congratulations, $name\n";
+        echo "Congratulations, $name!\n";
     }
 }
