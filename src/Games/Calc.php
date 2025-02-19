@@ -8,7 +8,7 @@ function calculatorGame(): void
 {
     $gameRule = "What is the result of the expression?";
 
-    $generateRound = function () {
+    $generateRound = function (): array {
         $operators = ['+', '-', '*'];
         $num1 = rand(1, 50);
         $num2 = rand(1, 50);
@@ -19,9 +19,10 @@ function calculatorGame(): void
             '+' => $num1 + $num2,
             '-' => $num1 - $num2,
             '*' => $num1 * $num2,
-            default => throw new \Exception("Unknown operator: {$operator}"),
         };
+
         return [$question, $correctAnswer];
     };
+
     Engine\game($gameRule, $generateRound);
 }
