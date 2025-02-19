@@ -2,75 +2,60 @@
 [![Actions Status](https://github.com/MrMarmelad-creator/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/MrMarmelad-creator/php-project-45/actions)
 <a href="https://codeclimate.com/github/MrMarmelad-creator/php-project-45/maintainability"><img src="https://api.codeclimate.com/v1/badges/8e9df1a964878dd96871/maintainability" /></a>
 
-Проект игры разума.
+# Проект "Игры разума"
 
-Описание
+## Описание
 
-"Игры разума" – это набор консольных игр, включающих:
+**"Игры разума"** – это набор консольных игр, включающих:
 
-Проверку на четность
+- Проверку на **четность**
+- **Калькулятор**
+- Поиск **наибольшего общего делителя (НОД)**
+- **Арифметическую прогрессию**
+- Определение **простого числа**
 
-Калькулятор
+Игроку необходимо дать **три правильных ответа подряд**, чтобы победить.
 
-Поиск наибольшего общего делителя (НОД)
+## Минимальные требования
 
-Арифметическую прогрессию
+- **PHP 8.0+**
+- **Composer**
+- **Make**
 
-Определение простого числа
+## Установка
 
-Игроку необходимо дать три правильных ответа подряд, чтобы победить.
+1. Клонируйте репозиторий:
 
-**Минимальные требования:**
+`git clone https://github.com/MrMarmelad-creator/php-project-45.git
+cd php-brain-games`
 
-PHP 8.0+
+2. Установите зависимости:
 
-Composer
+`make brain-even`
 
-Make
+## Запуск игр
 
-**Установка:**
+Каждую игру можно запустить с помощью команды `make`:
 
-Клонируйте репозиторий:
+- **Четность**: `make brain-even`
+- **Калькулятор**: `make brain-calc`
+- **НОД**: `make brain-gcd`
+- **Прогрессия**: `make brain-progression`
+- **Простое число**: `make brain-prime`
 
-git clone https://github.com/MrMarmelad-creator/php-project-45.git
-cd php-brain-games
+## Демонстрация игр
 
-**Установите зависимости:**
+### Brain-even:
+[Демонстрация Brain-even](https://asciinema.org/a/TJ1WOkQOhKPBvNLShfLByTHUJ)
 
-make install
+### Brain-calc:
+[Демонстрация Brain-calc](https://asciinema.org/a/ltoYASPx0eaBiLBYiCFPpi5Du)
 
-**Запуск игр**
+### Brain-gcd:
+[Демонстрация Brain-gcd](https://asciinema.org/a/TJZCsd8AonmsriUQaJBgSqdO0)
 
-Каждую игру можно запустить с помощью команды make:
+### Brain-progression:
+[Демонстрация Brain-progression](https://asciinema.org/a/SoSxI5SZWoix5cIEm4cBtnDWp)
 
-Четность: make brain-even
-
-Калькулятор: make brain-calc
-
-НОД: make brain-gcd
-
-Прогрессия: make brain-progression
-
-Простое число: make brain-prime
-
-**Демонстрация игр:**
-
-#Brain-even:
-
-https://asciinema.org/a/TJ1WOkQOhKPBvNLShfLByTHUJ
-
-#Brain-calc:
-
-https://asciinema.org/a/ltoYASPx0eaBiLBYiCFPpi5Du
-
-#Brain-gcd:
-
-https://asciinema.org/a/TJZCsd8AonmsriUQaJBgSqdO0
-
-#Brain-progression:
-
-https://asciinema.org/a/SoSxI5SZWoix5cIEm4cBtnDWp
-
-#Brain-prime
-
-https://asciinema.org/a/P8lWzUShMmgS2RBiURPXxuMda
+### Brain-prime:
+[Демонстрация Brain-prime](https://asciinema.org/a/P8lWzUShMmgS2RBiURPXxuMda)
