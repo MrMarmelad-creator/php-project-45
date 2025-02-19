@@ -6,7 +6,7 @@ use Php\Project45\Engine;
 
 function isEven(): void
 {
-    $gameRule = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    $gameRule = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 
     $generateRound = function (): array {
         $number = rand(1, 100);
