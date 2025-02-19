@@ -3,38 +3,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function cli\prompt;
-use function cli\line;
+use Php\Project45\Games\Even;
 
-function isEven($number)
-{
-    return $number % 2 === 0;
-}
-function games()
-{
-    $correctAnswersCount = 0;
-
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-    echo "Answer \"yes\" if the number is even, otherwise answer \"no\".\n";
-
-    while ($correctAnswersCount < 3) {
-        $random = mt_rand(1, 100);
-        echo "Question: $random\n";
-        echo "Your answer: ";
-        $userInput = trim(fgets(STDIN));
-        $correctAnswer = isEven($random) ? 'yes' : 'no';
-        if ($correctAnswer === $userInput) {
-            echo "Correct!\n";
-            $correctAnswersCount++;
-        } else {
-            echo "'$userInput' is wrong answer ;(. Correct answer was '$correctAnswer'.\n Let's try again, $name!\n.\n";
-            return;
-        }
-    }
-    if ($correctAnswersCount === 3) {
-        echo "Congratulations, $name!\n";
-    }
-}
-games();
+Even\isEven();

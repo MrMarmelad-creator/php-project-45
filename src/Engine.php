@@ -5,29 +5,28 @@ namespace Php\Project45\Engine;
 use function cli\prompt;
 use function cli\line;
 
-function games(string $gameRule, callable $generateRound)
+const ROUNDS_COUNT = 3;
+function game(string $gameRule, callable $generateRound): void
 {
-    $correctAnswersCount = 0;
 
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    echo "$gameRule\n";
+    line($gameRule);
 
-    while ($correctAnswersCount < 3) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         [$question, $correctAnswer] = $generateRound();
-        echo "Question: $question\n";
-        echo "Your answer: ";
-        $input = fgets(STDIN);
-        $userInput = trim($input !== false ? $input : '');
+        line("Question: %s", $question);
+        $userInput = prompt("Your answer");
 
         if ((string) $correctAnswer === $userInput) {
-            echo "Correct!\n";
-            $correctAnswersCount++;
+            line("Correct!");
         } else {
-            echo "\"$userInput\" is wrong answer ;(. Correct answer was \"$correctAnswer\".\nLet's try again, $name!\n";
+            line("\"%s\" is wrong answer ;(. Correct answer was \"%s\".", $userInput, $correctAnswer);
+            line("Let's try again, %s!", $name);
             return;
         }
     }
+
     line("Congratulations, %s!", $name);
 }
