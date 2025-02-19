@@ -4,7 +4,7 @@ namespace Php\Project45\Games\Gcd;
 
 use Php\Project45\Engine;
 
-function gcd($a, $b)
+function gcd(int $a, int $b): int
 {
     while ($b !== 0) {
         [$a, $b] = [$b, $a % $b];

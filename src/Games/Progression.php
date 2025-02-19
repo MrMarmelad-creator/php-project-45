@@ -4,7 +4,7 @@ namespace Php\Project45\Games\Progression;
 
 use Php\Project45\Engine;
 
-function StartProgression($length, $start, $step)
+function StartProgression(int $length, int $start, int $step): array
 {
     $progression = [];
 
