@@ -30,5 +30,5 @@ function startGame(): void
         $question = implode(" ", $progression);
         return [$question, "$correctAnswer"];
     };
-    Engine\game($gameRule, $generateRound);
+    Engine\startRound($gameRule, $generateRound);
 }
