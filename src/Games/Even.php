@@ -14,5 +14,5 @@ function startGame(): void
         return [$number, "$correctAnswer"];
     };
 
-    Engine\game($gameRule, $generateRound);
+    Engine\startRound($gameRule, $generateRound);
 }
