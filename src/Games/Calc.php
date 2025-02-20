@@ -19,7 +19,7 @@ function startGame(): void
             '+' => $num1 + $num2,
             '-' => $num1 - $num2,
             '*' => $num1 * $num2,
-            default => null
+            default => null,
         };
 
         return [$question, "$correctAnswer"];
