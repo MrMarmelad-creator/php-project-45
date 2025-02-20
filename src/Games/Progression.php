@@ -4,7 +4,7 @@ namespace Php\Project45\Games\Progression;
 
 use Php\Project45\Engine;
 
-function StartProgression(int $length, int $start, int $step): array
+function startProgression(int $length, int $start, int $step): array
 {
     $progression = [];
 
@@ -21,7 +21,7 @@ function startGame(): void
         $length = rand(5, 10);
         $start = rand(1, 50);
         $step = rand(2, 10);
-        $progression = StartProgression($length, $start, $step);
+        $progression = startProgression($length, $start, $step);
 
         $hideInd = rand(0, $length - 1);
         $correctAnswer = $progression[$hideInd];
