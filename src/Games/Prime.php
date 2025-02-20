@@ -17,7 +17,7 @@ function isPrime(int $number): bool
     return true;
 }
 
-function playPrimeGame(): void
+function startGame(): void
 {
     $gameRule = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 
@@ -26,7 +26,7 @@ function playPrimeGame(): void
         $correctAnswer = isPrime($number) ? 'yes' : 'no';
         $question = "$number";
 
-        return [$question, $correctAnswer];
+        return [$question, "$correctAnswer"];
     };
 
     Engine\game($gameRule, $generateRound);

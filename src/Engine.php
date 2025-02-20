@@ -19,14 +19,12 @@ function game(string $gameRule, callable $generateRound): void
         line("Question: %s", $question);
         $userInput = prompt("Your answer");
 
-        if ((string) $correctAnswer === $userInput) {
-            line("Correct!");
-        } else {
+        if ($correctAnswer !== $userInput) {
             line("\"%s\" is wrong answer ;(. Correct answer was \"%s\".", $userInput, $correctAnswer);
             line("Let's try again, %s!", $name);
             return;
         }
+        line("Correct!");
     }
-
     line("Congratulations, %s!", $name);
 }

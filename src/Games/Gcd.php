@@ -12,7 +12,7 @@ function gcd(int $a, int $b): int
     return $a;
 }
 
-function brainGcd(): void
+function startGame(): void
 {
     $gameRule = "Find the greatest common divisor of given numbers.";
 
@@ -22,7 +22,7 @@ function brainGcd(): void
         $question = "$num1 $num2";
         $correctAnswer = gcd($num1, $num2);
 
-        return [$question, $correctAnswer];
+        return [$question, "$correctAnswer"];
     };
     Engine\game($gameRule, $generateRound);
 }

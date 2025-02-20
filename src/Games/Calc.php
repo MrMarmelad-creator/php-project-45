@@ -4,7 +4,7 @@ namespace Php\Project45\Games\Calc;
 
 use Php\Project45\Engine;
 
-function calculatorGame(): void
+function startGame(): void
 {
     $gameRule = "What is the result of the expression?";
 
@@ -19,9 +19,10 @@ function calculatorGame(): void
             '+' => $num1 + $num2,
             '-' => $num1 - $num2,
             '*' => $num1 * $num2,
+            default => null
         };
 
-        return [$question, $correctAnswer];
+        return [$question, "$correctAnswer"];
     };
 
     Engine\game($gameRule, $generateRound);

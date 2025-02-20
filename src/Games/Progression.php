@@ -13,7 +13,7 @@ function StartProgression(int $length, int $start, int $step): array
     }
     return $progression;
 }
-function brainProgression(): void
+function startGame(): void
 {
     $gameRule = "What number is missing in the progression?";
 
@@ -28,7 +28,7 @@ function brainProgression(): void
         $progression[$hideInd] = "..";
 
         $question = implode(" ", $progression);
-        return [$question, $correctAnswer];
+        return [$question, "$correctAnswer"];
     };
     Engine\game($gameRule, $generateRound);
 }
