@@ -23,9 +23,9 @@ function startGame(): void
         $step = rand(2, 10);
         $progression = startProgression($length, $start, $step);
 
-        $hideInd = rand(0, $length - 1);
-        $correctAnswer = $progression[$hideInd];
-        $progression[$hideInd] = "..";
+        $hideIndex = rand(0, $length - 1);
+        $correctAnswer = $progression[$hideIndex];
+        $progression[$hideIndex] = "..";
 
         $question = implode(" ", $progression);
         return [$question, "$correctAnswer"];
