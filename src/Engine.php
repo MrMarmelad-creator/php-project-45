@@ -6,7 +6,7 @@ use function cli\prompt;
 use function cli\line;
 
 const ROUNDS_COUNT = 3;
-function game(string $gameRule, callable $generateRound): void
+function startRound(string $gameRule, callable $generateRound): void
 {
 
     line('Welcome to the Brain Games!');
