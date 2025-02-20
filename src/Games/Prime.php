@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project45\Games\Prime;
+namespace Php\MyProject\Games\Prime;
 
-use Php\Project45\Engine;
+use Php\MyProject\Engine;
 
 function isPrime(int $number): bool
 {

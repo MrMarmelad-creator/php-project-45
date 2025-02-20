@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project45\Games\Progression;
+namespace Php\MyProject\Games\Progression;
 
-use Php\Project45\Engine;
+use Php\MyProject\Engine;
 
 function startProgression(int $length, int $start, int $step): array
 {

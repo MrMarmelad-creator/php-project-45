@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project45\Games\Even;
+namespace Php\MyProject\Games\Even;
 
-use Php\Project45\Engine;
+use Php\MyProject\Engine;
 
 function startGame(): void
 {

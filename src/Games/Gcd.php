@@ -1,8 +1,8 @@
 <?php
 
-namespace Php\Project45\Games\Gcd;
+namespace Php\MyProject\Games\Gcd;
 
-use Php\Project45\Engine;
+use Php\MyProject\Engine;
 
 function gcd(int $a, int $b): int
 {
